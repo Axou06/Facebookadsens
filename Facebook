@@ -31,12 +31,12 @@
     
     <div class="ad-container">
       <!-- Script publicitaire Google AdSense -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3287362159550339"
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3287362159550339"
           crossorigin="anonymous"></script>
       <!-- Emplacement de l'annonce -->
       <ins class="adsbygoogle"
           style="display:block"
-          data-ad-client="ca-pub-3287362159550339"
+          data-ad-client="pub-3287362159550339"
           data-ad-slot="9352108112"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
