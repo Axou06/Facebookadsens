@@ -1,51 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mon site statique</title>
+  <title>Formulaire de demande de logement</title>
   <style>
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
     }
     
     .container {
-      text-align: center;
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
     
     h1 {
       font-size: 24px;
+      text-align: center;
       margin-bottom: 20px;
     }
     
-    .ad-container {
-      margin: 20px auto;
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .submit-btn {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .submit-btn:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <h1>Bienvenue sur mon site statique</h1>
-    
-    <div class="ad-container">
-      <!-- Script publicitaire Google AdSense -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=pub-3287362159550339"
-          crossorigin="anonymous"></script>
-      <!-- Emplacement de l'annonce -->
-      <ins class="adsbygoogle"
-          style="display:block"
-          data-ad-client="pub-3287362159550339"
-          data-ad-slot="9352108112"
-          data-ad-format="auto"
-          data-full-width-responsive="true"></ins>
-      <script>
+    <h1>Formulaire de demande de logement</h1>
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLScqk5K3dmzDwGqwwi2klUwRPHIrbRKT2VE94QZgZHLYS0Czjg/formResponse" method="POST">
+      <div class="form-group">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="entry.123456789" required>
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="entry.987654321" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="entry.456789123" required>
+      </div>
+      <div class="form-group">
+        <label for="telephone">Téléphone :</label>
+        <input type="tel" id="telephone" name="entry.321987654" required>
+      </div>
+      <div class="form-group">
+        <label for="budget">Budget mensuel :</label>
+        <input type="text" id="budget" name="entry.159753486" required>
+      </div>
+      <div class="form-group">
+        <label for="type-logement">Type de logement :</label>
+        <select id="type-logement" name="entry.741852963" required>
+          <option value="">Sélectionner</option>
+          <option value="Appartement">Appartement</option>
+          <option value="Maison">Maison</option>
+          <option value="Studio">Studio</option>
+          <option value="Villa">Villa</option>
+          <option value="Autre">Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="nombre-chambres">Nombre de chambres :</label>
+        <input type="number" id="nombre-chambres" name="entry.369852147" min="0" required>
+      </div>
+      <div class="form-group">
+        <!-- Script publicitaire Google AdSense -->
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- Emplacement de l'annonce -->
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="pub-3287362159550339"
+            data-ad-slot="9352108112"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
-    </div>
-    
-    <p>Merci de visiter notre site !</p>
+        </script>
+      </div>
+      <div class="form-group">
+        <input type="submit" class="submit-btn" value="Envoyer la demande">
+      </div>
+    </form>
   </div>
 </body>
 </html>
